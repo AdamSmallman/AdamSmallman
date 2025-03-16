@@ -1,0 +1,16 @@
+title: Journal
+template: journal/show
+layout: layout
+mount: 01d49251-cb92-4f4a-b410-84e310c5184a
+revisions: false
+route: '/{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

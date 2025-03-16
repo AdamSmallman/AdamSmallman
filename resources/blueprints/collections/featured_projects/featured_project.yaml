@@ -1,0 +1,151 @@
+title: 'Featured project'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: service_used
+            field:
+              type: text
+              display: 'Service used'
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: sub_title_text
+            field:
+              type: textarea
+              display: 'Sub title text'
+          -
+            handle: main_pic
+            field:
+              container: assets
+              type: assets
+              display: 'Main picture'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: 'PROJECT BACKGROUND'
+        fields:
+          -
+            handle: background_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: background_text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Text
+      -
+        display: 'THE CHALLENGE'
+        fields:
+          -
+            handle: challenge_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: challenge_text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Text
+      -
+        display: 'BRAND DESIGN'
+        fields:
+          -
+            handle: brand_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: brand_text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Text
+          -
+            handle: long_image
+            field:
+              container: assets
+              type: assets
+              display: 'Long image'
+          -
+            handle: image_one
+            field:
+              container: assets
+              type: assets
+              display: 'Image one'
+          -
+            handle: image_two
+            field:
+              container: assets
+              type: assets
+              display: 'Image two'
+      -
+        display: Showcase
+        fields:
+          -
+            handle: show_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: show_text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Text
+          -
+            handle: show_image_long
+            field:
+              container: assets
+              type: assets
+              display: 'show image long'
+          -
+            handle: show_image_one
+            field:
+              container: assets
+              type: assets
+              display: 'Image one'
+          -
+            handle: show_image_two
+            field:
+              container: assets
+              type: assets
+              display: 'Image two'
+          -
+            handle: show_image_three
+            field:
+              container: assets
+              type: assets
+              display: 'Image three'
+          -
+            handle: show_image_four
+            field:
+              container: assets
+              type: assets
+              display: 'Image four'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

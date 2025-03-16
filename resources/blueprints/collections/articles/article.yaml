@@ -1,0 +1,107 @@
+title: Article
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: small_image
+            field:
+              container: assets
+              type: assets
+              display: 'Small image'
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: main_image
+            field:
+              container: assets
+              type: assets
+              display: 'Main image'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: Content
+        fields:
+          -
+            handle: sub_title
+            field:
+              type: text
+              display: 'Sub title'
+          -
+            handle: text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: text
+          -
+            handle: image_one
+            field:
+              container: assets
+              type: assets
+              display: 'Image one'
+          -
+            handle: image_two
+            field:
+              container: assets
+              type: assets
+              display: 'Image two'
+          -
+            handle: image_three
+            field:
+              container: assets
+              type: assets
+              display: 'Image three'
+          -
+            handle: image_four
+            field:
+              container: assets
+              type: assets
+              display: 'Image four'
+          -
+            handle: image_five
+            field:
+              container: assets
+              type: assets
+              display: 'Image five'
+          -
+            handle: image_six
+            field:
+              container: assets
+              type: assets
+              display: 'Image six'
+          -
+            handle: image_long_one
+            field:
+              container: assets
+              type: assets
+              display: Image_long_one
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required

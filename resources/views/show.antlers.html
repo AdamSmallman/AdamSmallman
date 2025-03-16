@@ -1,0 +1,132 @@
+
+
+{{ partial:com/hero-projects }}
+
+
+<section  class=" bg-white pt-[5em] pb-[5em]">
+
+    <div class="w-[90%] max-w-[1280px] m-auto">
+
+        <h2 class="text-[#0C101D] text-[16px] font-bold  pb-[1em] max-w-[900px]">{{ background_title }}</h2>
+
+        <div class="textP font-light text-[#6D7077] text-[16px] max-w-[900px]">{{ background_text }}</div>
+
+
+        <h2 class="text-[#0C101D] text-[16px] font-bold  pb-[1em] pt-[3em] max-w-[900px]">{{ challenge_title }}</h2>
+
+        <div class="textP font-light text-[#6D7077] text-[16px] max-w-[900px]">{{ challenge_text }}</div>
+
+
+        <h2 class="text-[#0C101D] text-[16px] font-bold  pb-[1em] pt-[3em] max-w-[900px]">{{ brand_title }}</h2>
+
+        <div class="textP font-light text-[#6D7077] text-[16px] max-w-[900px]">{{ brand_text }}</div>
+
+        <div class="pt-[2em] relative w-full">
+
+            {{ long_image }}
+            <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+            {{ /long_image }}
+
+            <div class="showTwo flex justify-between gap-[1em] pt-[1em] relative overflow-auto">
+
+                <div>
+                    {{ image_one }}
+                    <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+                    {{ /image_one }}
+                </div>
+
+                <div>
+                    {{ image_two }}
+                    <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+                    {{ /image_two }}
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2 class="text-[#0C101D] text-[16px] font-bold  pb-[1em] pt-[3em] max-w-[900px]">{{ show_title }}</h2>
+
+        <div class="textP font-light text-[#6D7077] text-[16px] max-w-[900px]">{{ show_text }}</div>
+
+
+        <div class="pt-[2em] relative w-full">
+
+            {{ show_image_long }}
+            <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+            {{ /show_image_long }}
+
+            <div class="showTwo flex justify-between gap-[1em] pt-[1em] relative overflow-auto">
+
+                <div>
+                    {{ show_image_one }}
+                    <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+                    {{ /show_image_one }}
+                </div>
+
+                <div>
+                    {{ show_image_two }}
+                    <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+                    {{ /show_image_two }}
+                </div>
+
+            </div>
+
+            <div class="showTwo flex justify-between gap-[1em] pt-[1em] relative overflow-auto">
+
+                <div>
+                    {{ show_image_three }}
+                    <img class="w-full"src="{{ url }}" alt="{{ alt }}">
+                    {{ /show_image_three }}
+                </div>
+
+                <div>
+                    {{ show_image_four }}
+                    <img class="w-full" src="{{ url }}" alt="{{ alt }}">
+                    {{ /show_image_four }}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<section id="nextProject" class="pb-[5em] pt-[5em]">
+
+    <h2 class="h2NexTitle text-white text-[35px] font-bold pt-[0.3em] w-[90%] max-w-[1280px] m-auto">View Next Project</h2>
+
+    <div class="projectWrap mx-[1.5em] m-auto pt-[2em] flex flex-col gap-[1.5em]">
+
+
+        {{ collection:featured_projects limit="1" :id:not="id"}}
+
+
+        {{ main_pic }}
+
+                <div class="project bg-cover bg-center w-full p-[5em] pt-[5em]" style="background-image: url('{{ glide:url }}'); background-position: {{ focus | background_position }}; ">
+
+                    {{ /main_pic }}
+
+                    <div class="project-con max-w-[400px]">
+
+                        <p class="projectPSmall text-[#DEDEDE] text-[13px] font-normal ">{{ service_used }}</p>
+                        <h2 class="projectH2 text-white text-[35px] font-bold pb-[0.5em]  ">{{ title }}</h2>
+
+                        <a href="{{ url }}" class=" border-white border-2 text-white py-[0.8em] px-[1.5em] block w-fit hover:text-[#0C101D] hover:bg-white ">View project</a>
+
+                    </div>
+
+                </div>
+
+        {{ /collection:featured_projects }}
+
+
+        </div>
+
+
+</section>
