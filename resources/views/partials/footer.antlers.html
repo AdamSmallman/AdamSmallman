@@ -5,55 +5,40 @@
         <div class="startprojectSection">
 
             <!-- <a href="" class=" text-white font-medium text-[24] underline">Download my cv</a> -->
-            <h2 class="footerH2 text-white text-[35px] font-bold pt-[0.3em]">Free SEO & Website Audit</h2>
-            <p class="text-[#DEDEDE] text-[16px] font-light pb-[2em]">Fill out the form below and claim your free audit</p>
+            <h2 class="footerH2 text-white text-[35px] font-bold pt-[0.3em]">Have a project in mind<span class="text-[#FF6D29]">?</span></h2>
+            <p class="text-[#DEDEDE] text-[16px] font-light pb-[1em]">Send me an email and lets talk</p>
 
+            <div class="flex items-center gap-2 relative  ">
 
-            {{ form:create in="audit" id="auditForm" }}
+            <img class="w-[40px] h-auto" src="/assets/message_icon.svg" alt="email icon">
+            <p id="email" class="email text-[#DEDEDE] font-light text-[20px] hover:text-[#FF6D29] cursor-pointer ">adamsmallman123@gmail.com</p>
 
-            {{ nocache }}
-
-            {{ if success }}
-
-            {{ form:submission in='audit' }}
-
-              {{ redirect to="thanks?name={{ name }}" }}
-
-            {{ /form:submission }}
-
-            {{ /if }}
-
-                <div class=" flex gap-[0.5em] pb-[0.5em]">
-                <input id="name" required name="name" type="text" placeholder="Name" class="w-full h-[50px] bg-[#0C101D] text-[#DEDEDE] border-[1px] border-white pl-[1em] text-[13px]">
-                <input id="email" required name="email" type="text" placeholder="Email address" class="w-full h-[50px] bg-[#0C101D] text-[#DEDEDE] border-[1px] border-white pl-[1em] text-[13px]">
             </div>
-                <input id="website" required name="website" type="text" placeholder="Your website" class="w-full h-[50px] bg-[#0C101D] text-[#DEDEDE] border-[1px] border-white pl-[1em] text-[13px]">
-
-                <button id="auditFormButton" class="bg-white text-[#0C101D] py-[0.8em] px-[1.5em] mt-[1em] w-full">Submit</button>
-
-                {{ /nocache }}
-            {{ /form:create }}
 
         </div>
 
         <div>
 
-            <div class="flex items-center gap-2 pb-[1.5em] ">
-            <img class="w-[30px] h-auto" src="/assets/message_icon.svg" alt="email icon">
-            <p class=" text-[#DEDEDE] font-light">adamsmallman123@gmail.com</p>
-            </div>
 
-            <ul class="footerNav flex justify-center gap-16  ">
+
+            <ul class="footerNav flex justify-center gap-[2.5em]  ">
 
                 <li>
                     <div class="text-[#FF6D29] text-[20px] font-bold">01</div>
-                    <a href="/" class="footerNavItem text-[#DEDEDE] hover:text-white font-light  tracking-wider text-[16px]">PORTFOLIO</a></li>
+                    <a href="/" class="{{ if title == 'Adam Smallman' }} on {{ /if }} footerNavItem text-[#DEDEDE] hover:text-white font-light  tracking-wider text-[16px]">PORTFOLIO</a></li>
+
+                    <li>
+                        <div class="text-[#FF6D29] text-[20px] font-bold">02</div>
+                        <a href="/about" class="{{ if title == 'ABOUT' }} on {{ /if }} footerNavItem text-[#DEDEDE] hover:text-white font-light tracking-wider  text-[16px]">ABOUT</a></li>
+
+                        <li>
+                            <div class="text-[#FF6D29] text-[20px] font-bold">03</div>
+                            <a href="/journal" class="{{ if title == 'JOURNAL' }} on {{ /if }} footerNavItem text-[#DEDEDE] hover:text-white font-light tracking-wider  text-[16px]">JOURNAL</a></li>
+
                 <li>
-                    <div class="text-[#FF6D29] text-[20px] font-bold">02</div>
-                    <a href="/journal" class="footerNavItem text-[#DEDEDE] hover:text-white font-light tracking-wider  text-[16px]">JOURNAL</a></li>
-                <li>
-                    <div class="text-[#FF6D29] text-[20px] font-bold">03</div>
-                    <a href="/about" class="footerNavItem text-[#DEDEDE] hover:text-white font-light tracking-wider  text-[16px]">ABOUT</a></li>
+                    <div class="text-[#FF6D29] text-[20px] font-bold">04</div>
+                    <a href="/contact-me" class="{{ if title == 'CONTACT ME' }} on {{ /if }} footerNavItem text-[#DEDEDE] hover:text-white font-light tracking-wider  text-[16px] cursor-pointer">CONTACT</a></li>
+
 
              </ul>
 

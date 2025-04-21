@@ -4,9 +4,10 @@
 
     <ul class="nav flex justify-center gap-16  ">
 
-       <li><a href="/" class=" text-[#DEDEDE] hover:text-white font-medium hover:font-bold tracking-wider text-[13px]">PORTFOLIO</a></li>
-       <li><a href="/journal" class=" text-[#DEDEDE] hover:text-white font-medium hover:font-bold tracking-wider text-[13px]">JOURNAL</a></li>
-       <li><a href="/about" class=" text-[#DEDEDE] hover:text-white font-medium hover:font-bold tracking-wider text-[13px]">ABOUT</a></li>
+       <li><a href="/" class="{{ if title == 'Adam Smallman' }} on {{ /if }} text-[#DEDEDE] hover:text-white font-medium  tracking-wider text-[13px]">PORTFOLIO</a></li>
+       <li><a href="/about" class="{{ if title == 'ABOUT' }} on {{ /if }} text-[#DEDEDE] hover:text-white font-medium  tracking-wider text-[13px]">ABOUT</a></li>
+       <li><a href="/journal" class="{{ if title == 'JOURNAL' }} on {{ /if }} text-[#DEDEDE] hover:text-white font-medium  tracking-wider text-[13px]">JOURNAL</a></li>
+       <li><a href="/contact-me" class="{{ if title == 'CONTACT ME' }} on {{ /if }} cursor-pointer text-[#DEDEDE] hover:text-white font-medium  tracking-wider text-[13px]">CONTACT</a></li>
 
     </ul>
 

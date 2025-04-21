@@ -1,0 +1,46 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: Email
+              validate:
+                - required
+          -
+            handle: select_service
+            field:
+              options:
+                -
+                  key: 'Brand design'
+                  value: null
+                -
+                  key: 'Website design'
+                  value: null
+                -
+                  key: Marketing
+                  value: null
+                -
+                  key: Other
+                  value: null
+              type: select
+              display: 'Select service'
+              validate:
+                - required
+          -
+            handle: info
+            field:
+              type: textarea
+              display: Info
