@@ -223,63 +223,7 @@ html, body {
 
         }
 
-          @media only screen and (max-width: 590px) {
-            .nav {
 
-                background-color: white;
-position: absolute;
-                flex-direction: column;
-
-                right: 0;
-                left: 0;
-
-                top: 7em;
-                z-index: 11;
-                padding: 1.5em;
-                display: none;
-                padding-top: 2em;
-                width: 90%;
-                margin: auto;
-                border-radius: 5px;
-              }
-
-              .nav li{
-
-                padding-bottom: 0.5em;
-
-              }
-
-              .nav li:last-child{
-
-                padding-bottom: 0em;
-
-              }
-
-
-
-              .nav li a{
-
-                font-size: 20px;
-                color: #0C101D;
-
-
-              }
-
-              .nav li a:hover{
-
-                color: #0C101D !important;
-
-              }
-
-          }
-
-          @media only screen and (max-width: 590px) {
-            .navTab {
-                display: block;
-
-              }
-
-          }
 
 
 
@@ -518,29 +462,8 @@ position: absolute;
 
 
 
-      .journal-p-wrap p{
-
-        padding-bottom: 0.5em;
-
-      }
-
-      .journal-p-wrap p:last-child{
-
-        padding-bottom: 0;
-
-      }
 
 
-
-      @media only screen and (max-width: 500px) {
-
-      .name-email-wrap{
-
-        flex-direction: column;
-
-      }
-
-    }
 
 
 
@@ -579,15 +502,4 @@ position: absolute;
 
 
 
-      @media only screen and (max-width: 748px) {
 
-
-.contact-wrap{
-
-    border: none !important;
-    padding: 0 !important;
-
-
-}
-
-      }
